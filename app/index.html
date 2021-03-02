@@ -17,36 +17,39 @@
         <div class="col-9 offset-2">
           <div class="calculator">
             <div class="calculator__input">
-              <input type="number">
+              <input type="text">
             </div>
-            <ul class="calculator__keys">
-              <li class="calculator__key">1</li>
-              <li class="calculator__key">2</li>
-              <li class="calculator__key">3</li>
-              <li class="calculator__key">+</li>
-            </ul>
-            <ul class="calculator__keys">
-              <li class="calculator__key">4</li>
-              <li class="calculator__key">5</li>
-              <li class="calculator__key">6</li>
-              <li class="calculator__key">-</li>
-            </ul>
-            <ul class="calculator__keys">
-              <li class="calculator__key">7</li>
-              <li class="calculator__key">8</li>
-              <li class="calculator__key">9</li>
-              <li class="calculator__key">X</li>
-            </ul>
-            <ul class="calculator__keys">
-              <li class="calculator__key">0</li>
-              <li class="calculator__key">=</li>
-              <li class="calculator__key">,</li>
-              <li class="calculator__key">÷</li>
-            </ul>
+              <table>
+                <tr class="calculator__keys">
+                  <td class="calculator__key"><button class="calculator__calculation" value="1" onclick="key(this.value)">1</button></td>
+                  <td class='calculator__key'><button class="calculator__calculation" value="2" onclick="key(this.value)">2</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="3" onclick="key(this.value)">3</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="+" onclick="key(this.value)">+</button></td>
+                </tr>
+                <tr class="calculator__keys">
+                  <td class="calculator__key"><button class="calculator__calculation" value="4" onclick="key(this.value)">4</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="5" onclick="key(this.value)">5</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="6" onclick="key(this.value)">6</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="-" onclick="key(this.value)">-</button></td>
+                </tr>
+                <tr class="calculator__keys">
+                  <td class="calculator__key"><button class="calculator__calculation" value="7" onclick="key(this.value)">7</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="8" onclick="key(this.value)">8</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="9" onclick="key(this.value)">9</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="x" onclick="key(this.value)">x</button></td>
+                </tr>
+                <tr class="calculator__keys">
+                  <td class="calculator__key"><button class="calculator__calculation" value="," onclick="key(this.value)">,</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="0" onclick="key(this.value)">0</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="=" onclick="key(this.value)">=</button></td>
+                  <td class="calculator__key"><button class="calculator__calculation" value="÷" onclick="key(this.value)">÷</button></td>
+                </tr>
+              </table>
           </div>
         </div>
       </div>
     </div>
+    <script src="./src/js/index.js"></script>
     <script src="src/js/build.js"></script>
     <script src="src/components/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
