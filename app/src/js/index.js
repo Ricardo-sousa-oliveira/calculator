@@ -1,6 +1,5 @@
 function key(valor){
-  console.log(valor)
-}
-function calculation () {
-  
+  if (valor) {
+    console.log(valor)
+  };
 }
